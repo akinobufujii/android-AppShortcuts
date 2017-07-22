@@ -8,4 +8,6 @@ build:
   steps:
     - script:
       name: clone source and build
-      code: ./gradlew build
+      code: |
+        ./gradlew build
+        cp ./app/build/outputs/apk/*.apk ${WERCKER_REPORT_ARTIFACTS_DIR}
