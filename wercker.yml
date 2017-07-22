@@ -1,0 +1,10 @@
+box:
+  id: akinobufujii/androidbuildpack
+  tag: latest
+  username: $USERNAME
+  password: $PASSWORD
+
+build:
+    - script:
+      name: clone source and build
+      code: ./gradlew build
