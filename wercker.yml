@@ -5,6 +5,7 @@ box:
   password: $PASSWORD
 
 build:
+  steps:
     - script:
       name: clone source and build
       code: ./gradlew build
